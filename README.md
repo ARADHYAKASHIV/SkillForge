@@ -2,7 +2,7 @@
 
 **SkillForge** is an advanced AI-powered mock interview platform designed to help developers prepare for technical interviews. It provides realistic interview simulations with AI-generated questions, real-time feedback, and comprehensive performance analytics.
 
-This app is built on the **MERN stack**, integrated with **Firebase Authentication** and **OpenAI API**, featuring video recording, code execution, and detailed performance analysis.
+This app is built with **Next.js 14**, styled with **Tailwind CSS**, powered by **Vercel AI (v-api)** and **Firebase**, featuring video recording, code execution, and detailed performance analysis.
 
 ---
 
@@ -15,16 +15,16 @@ This app is built on the **MERN stack**, integrated with **Firebase Authenticati
 ## 🚀 Tech Stack
 
 ### Frontend
-- **React** (Vite) — fast and modern frontend framework
+- **Next.js 14** — React framework with App Router
 - **TailwindCSS** — utility-first CSS framework
-- **React Router** — SPA routing
-- **Axios** — API requests
-- **Web APIs** — `getUserMedia`, `MediaRecorder`, Code Editor APIs
-- **Context API / Redux (optional)** — state management
+- **Shadcn/ui** — accessible component system
+- **Vercel AI SDK** — AI chat components
+- **Web APIs** — `MediaRecorder`, Code Editor APIs
+- **Zustand** — state management
 
 ### Backend
-- **Node.js + Express.js** — REST API backend
-- **OpenAI API** — AI interview conductor
+- **Next.js API Routes** — serverless backend
+- **Vercel AI (v-api)** — AI interview conductor
 - **Firebase Admin SDK** — handle user validation
 - **Firestore** — flexible NoSQL cloud database
 - **Firebase Storage** — store interview recordings
@@ -98,33 +98,36 @@ This app is built on the **MERN stack**, integrated with **Firebase Authenticati
 
 ---
 
-## 📁 Folder Structure
+## 🎯 Project Goals
 
-skillforge/
-├── client/                         # Frontend (React + Vite + Tailwind)
-│   ├── public/                     # Static files like index.html, favicon
-│   └── src/
-│       ├── assets/                 # Logos, icons, images
-│       ├── components/             # Reusable UI components (VideoRecorder, CodeEditor, etc.)
-│       ├── context/                # Context providers (AuthContext, InterviewContext)
-│       ├── pages/                  # Route-based pages (Home, Interview, Dashboard)
-│       ├── routes/                 # App routes (PrivateRoutes, PublicRoutes)
-│       ├── services/               # API handlers using Axios
-│       ├── utils/                  # Utility functions (AI helpers, analytics, formatting)
-│       ├── App.jsx                 # Main application wrapper
-│       └── main.jsx                # Vite entry point
-│
-├── server/                         # Backend (Node.js + Express + Firebase Admin)
-│   ├── config/                     # Firebase Admin SDK and OpenAI config
-│   ├── controllers/                # Route logic (Interview, AI, Analytics)
-│   ├── middleware/                 # Auth middleware, AI processor, error handler
-│   ├── models/                     # Schema helpers for Firestore
-│   ├── routes/                     # API route definitions
-│   ├── utils/                      # AI prompts, analysis helpers, formatters
-│   ├── .env                        # Backend environment variables
-│   └── server.js                   # Entry point of Express server
-│
-├── firebase.json                   # Firebase deployment and emulator config
-├── firestore.rules                 # Firestore security rules
-├── README.md                       # Project documentation
-└── package.json                    # Project metadata and scripts
+- Create an accessible and intuitive interview preparation platform
+- Provide realistic AI-powered technical interview simulations
+- Offer comprehensive feedback and performance analytics
+- Help developers improve their interview skills systematically
+- Build a supportive community of practice
+
+### Primary Objectives
+
+1. **Skill Development**
+   - Technical knowledge enhancement
+   - Communication skills improvement
+   - Problem-solving capabilities
+   - Real-world scenario handling
+
+2. **User Experience**
+   - Intuitive interface design
+   - Seamless interview flow
+   - Instant feedback system
+   - Progress tracking
+
+3. **Technical Excellence**
+   - High-performance application
+   - Scalable architecture
+   - Secure data handling
+   - AI-powered interactions
+
+4. **Community Building**
+   - Knowledge sharing
+   - Peer support
+   - Best practices
+   - Success stories stories
